@@ -10,3 +10,4 @@ exports.index = function(req, res){
 exports.addproductform = function(req, res){
 	  res.render('addproductform', { title: 'Express' });
 	};
+	
