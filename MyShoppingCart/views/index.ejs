@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+      <link rel='stylesheet' href='/stylesheets/FrontView.css' />
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+
+   <div class="container">
+  <nav class="navbar navbar-inverse">
+    <div class="navbar-header">
+    	<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">My Store</a>
+	</div>
+	
+	<div class="collapse navbar-collapse js-navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li class="dropdown mega-dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Men <span class="caret"></span></a>				
+				<ul class="dropdown-menu mega-dropdown-menu">
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Men Collection</li>                            
+                            <div id="menCollection" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                    <a href="#"><img src="/images/MenShoes.jpg" class="img-responsive" alt="product 1"></a>
+                                    <h4><small>Men Shoes</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="/images/mensuit.jpg" class="img-responsive" alt="product 2"></a>
+                                    <h4><small>Blackberry Black Suit</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">109,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="/images/tshirt.jpg" class="img-responsive" alt="product 3"></a>
+                                    <h4><small>Numero Tshirt</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
+                                </div><!-- End Item -->                                
+                              </div><!-- End Carousel Inner -->
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#menCollection" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#menCollection" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div><!-- /.carousel -->
+                            <li class="divider"></li>
+                            <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Clothing</li>
+
+                          
+
+
+
+
+							<li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Shirts</a></li>
+                            
+							<li><a href="#">Shorts & 3/4ths</a></li>
+							
+						</ul>
+					</li>
+					<li class="col-sm-3">
+
+                        
+
+                        
+
+
+
+
+
+
+
+
+
+						<ul>
+							<li class="dropdown-header">Footwear</li>
+							<li><a href="#">Sport Shoes</a></li>
+							<li><a href="#">Casual Shoes</a></li>
+							<li><a href="#">Sandals & Floaters</a></li>                            
+													
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Bags & Luggage</li>
+                            <li><a href="#">Backpacks</a></li>
+							<li><a href="#">Travel Bag</a></li>
+							<li><a href="#">Laptop Bags</a></li>
+							                       
+						</ul>
+					</li>
+				</ul>				
+			</li>
+            <li class="dropdown mega-dropdown">
+    			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Women <span class="caret"></span></a>				
+				<ul class="dropdown-menu mega-dropdown-menu">
+					<li class="col-sm-3">
+    					<ul>
+							<li class="dropdown-header">Clothing</li>
+							<li><a href="#">Saree</a></li>
+                            <li><a href="#">Suits</a></li>
+                            <li><a href="#">Lingerie</a></li>
+							<li><a href="">tops</a></li>
+							
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Fashion & Accessories</li>
+							<li><a href="#">Face Pack</a></li>
+							<li><a href="#">Sun Glasses</a></li>
+											
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Footwear</li>
+							<li><a href="#">Sport Shoes</a></li>
+							<li><a href="#">Sandals</a></li>
+							<li><a href="#">Belly</a></li>                            
+													
+						</ul>
+					</li>
+                    <li class="col-sm-3">
+    					<ul>
+							<li class="dropdown-header">Women Collection</li>                            
+                            <div id="womenCollection" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                    <a href="#"><img src="/images/ladiesSuit1.jpg" class="img-responsive" alt="product 1"></a>
+                                    <h4><small>Summer dress floral prints</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">49,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="/images/LadiesSuit2.jpg" class="img-responsive" alt="product 2"></a>
+                                    <h4><small>Velora cotton suit</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">59,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="/images/LadiesJacket.jpg" class="img-responsive" alt="product 3"></a>
+                                    <h4><small>Ladies Jacket</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">79,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
+                                </div><!-- End Item -->                                
+                              </div><!-- End Carousel Inner -->
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#womenCollection" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#womenCollection" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div><!-- /.carousel -->
+                            <li class="divider"></li>
+                            <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+						</ul>
+					</li>
+
+
+
+
+				</ul>				
+			</li>
+            <li class="dropdown mega-dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Electronics <span class="caret"></span></a>				
+				<ul class="dropdown-menu mega-dropdown-menu">
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Mobile Collection</li>                            
+                            <div id="menCollection" class="carousel slide" data-ride="carousel">
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                    <a href="#"><img src="/images/s6.jpg" class="img-responsive" alt="product 1"></a>
+                                    <h4><small>Samsung S6</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">1049,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>       
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="/images/iphone7.jpg" class="img-responsive" alt="product 2"></a>
+                                    <h4><small>I Phone 7</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">2009,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>        
+                                </div><!-- End Item -->
+                                <div class="item">
+                                    <a href="#"><img src="/images/sonyz3.jpg" class="img-responsive" alt="product 3"></a>
+                                    <h4><small>Sony Z3</small></h4>                                        
+                                    <button class="btn btn-primary" type="button">1029,99 €</button> <button href="#" class="btn btn-default" type="button"><span class="glyphicon glyphicon-heart"></span> Add to Wishlist</button>      
+                                </div><!-- End Item -->                                
+                              </div><!-- End Carousel Inner -->
+                              <!-- Controls -->
+                              <a class="left carousel-control" href="#menCollection" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#menCollection" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            </div><!-- /.carousel -->
+                            <li class="divider"></li>
+                            <li><a href="#">View all Collection <span class="glyphicon glyphicon-chevron-right pull-right"></span></a></li>
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Mobile And Accessories</li>
+
+                          
+
+
+
+
+							<li><a href="#">Nokia</a></li>
+                            <li><a href="#">Samsung</a></li>
+                            
+							<li><a href="#">Micromax</a></li>
+							
+						</ul>
+					</li>
+					<li class="col-sm-3">
+
+                        
+
+                        
+
+
+
+
+
+
+
+
+
+						<ul>
+							<li class="dropdown-header">Computer And Accessories</li>
+							<li><a href="#">Dell</a></li>
+							<li><a href="#">Apple</a></li>
+							<li><a href="#">Lenovo</a></li>                            
+													
+						</ul>
+					</li>
+					<li class="col-sm-3">
+						<ul>
+							<li class="dropdown-header">Gaming</li>
+                            <li><a href="#">3d</a></li>
+							<li><a href="#">Remotes</a></li>
+							<li><a href="#">zoo</a></li>
+							                       
+						</ul>
+					</li>
+				</ul>				
+			</li>
+
+          
+            <li><a href="#">Store locator</a></li>
+		</ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Change Password</a></li>
+            <li><a href="#">Setting</a></li>
+           
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+        <li><a href="#">My cart (0) items</a></li>
+      </ul>
+	</div><!-- /.nav-collapse -->
+  </nav>
+</div>
+
+      <script type="text/javascript" src="/javascript/dropdown.js"></script>
+
+  </body>
+</html>
