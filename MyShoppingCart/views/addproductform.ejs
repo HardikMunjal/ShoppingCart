@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script data-require="angular.js@*" data-semver="1.2.5" src="http://code.angularjs.org/1.2.5/angular.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="/javascript/angular/app.js"></script>
+</head>
+
+<body ng-app="SelectApp" ng-controller="selectController">
+  
+  <select ng-model="selection.item">
+    <option value="">Category</option>
+    <option ng-repeat="item in category">{{ item }}</option>
+  </select>
+  
+  <select ng-model="selection.subitem" ng-disabled="!selection.item">
+    <option value="">Subcategory</option>
+    <option ng-repeat="subitem in subcategory">{{ subitem }}</option>
+  </select>
+
+  <p>
+    Selection: <code>{{ selection }}</code>
+  </p>
+  
+</body>
+
+</html>
