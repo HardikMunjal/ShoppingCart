@@ -9,7 +9,7 @@
 
 <body ng-app="SelectApp" ng-controller="selectController">
   
-  <select ng-model="selection.item">
+  <select ng-model="selection.item" ng-change="getSubcategory(selection.item)">
     <option value="">Category</option>
     <option ng-repeat="item in category">{{ item }}</option>
   </select>
