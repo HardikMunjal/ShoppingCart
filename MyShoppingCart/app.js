@@ -9,7 +9,7 @@ var express = require('express')
   , http = require('http')
   , path = require('path');
 
-
+var route=require('./routes/routes.js');
 
 var app = express();
 var mysql=require('mysql');
@@ -32,7 +32,7 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/addproduct',routes.addproductform)
 app.get('/users', user.list);
-
+app.get('/getsubcategory/:category',route.category_product.result);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
