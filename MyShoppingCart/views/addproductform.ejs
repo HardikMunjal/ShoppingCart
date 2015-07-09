@@ -9,21 +9,33 @@
 
 <body ng-app="SelectApp" ng-controller="selectController">
   
-  <select ng-model="selection.item" ng-change="getSubcategory(selection.item)">
+  <select ng-model="selection.item" ng-change="onSelectChange(selection.item)">
     <option value="">Category</option>
+
     <option ng-repeat="item in category">{{ item }}</option>
+
   </select>
+    <strong>RESULT:</strong> {{onSelectChangeResult}}<br />
+    {{ptis3}}
+
   
   <select ng-model="selection.subitem" ng-disabled="!selection.item">
     <option value="">Subcategory</option>
     <option ng-repeat="subitem in subcategory">{{ subitem }}</option>
   </select>
 
+ <h3>1. Text input with and without a change event handler</h3>
+    Type something<br />
+    <label>Input with change event: <input type="text" ng-model="editValue" ng-change="onEditChange()" /></label><br />
+    <label>Input without change event: <input type="text" ng-model="editValue" /></label><br />
+    <strong>RESULT:</strong> {{onEditChangeResult}}<br />
 
 
+    <br />
 
   <p>
     Selection: <code>{{ selection }}</code>
+      {{names}}
   </p>
   
 
