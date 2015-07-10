@@ -6,7 +6,8 @@ var mySqlConnectionString = mysql.createConnection({
     host: '180.151.101.114',
     port: '3306',
     user: 'sa',
-    password: 'root'
+    password: 'root',
+    database:'ecommerce'
 });
 
 var Connection = {

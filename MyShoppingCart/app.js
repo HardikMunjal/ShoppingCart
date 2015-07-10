@@ -32,7 +32,12 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/addproduct',routes.addproductform)
 app.get('/users', user.list);
+
 app.get('/getsubcategory/:category',route.category_product.result);
+app.get('/getsubcategory/:category/:subcategory',route.category_product.result);
+app.get('/getsubcategory',route.category_product.queryresult);
+app.get('/getsubcategory/:category/:subcategory/:template',route.category_product.templateresult)
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
